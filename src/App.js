@@ -34,13 +34,7 @@ var App = React.createClass({
           <UserProfile />
         </header>
         <Hero />
-        <TitleList title="Search Results" url={this.state.searchUrl} />
-        <TitleList title="Top TV picks for Jack" url='discover/tv?sort_by=popularity.desc&page=1' />
-        <TitleList title="Trending now" url='discover/movie?sort_by=popularity.desc&page=1' />
-        <TitleList title="Most watched in Horror" url='genre/27/movies?sort_by=popularity.desc&page=1' />
-        <TitleList title="Sci-Fi greats" url='genre/878/movies?sort_by=popularity.desc&page=1' />
-        <TitleList title="Comedy magic" url='genre/35/movies?sort_by=popularity.desc&page=1' />
-      </div>
+        </div>
     );
   }
 });
@@ -53,10 +47,9 @@ var Navigation = React.createClass({
       <div id="navigation" className="Navigation">
         <nav>
           <ul>
-            <li>Browse</li>
-            <li>My list</li>
-            <li>Top picks</li>
-            <li>Recent</li>
+            <li>HOME</li>
+            <li>LOGIN/SIGN UP</li>
+            <li>CHAT</li>
           </ul>
         </nav>
       </div>
@@ -70,7 +63,7 @@ var UserProfile = React.createClass({
     return (
       <div className="UserProfile">
         <div className="User">
-          <div className="name">Jack Oliver</div>
+          <div className="name">Jane Doe</div>
           <div className="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/profile/profile-512_1.jpg" alt="profile" /></div>
         </div>
       </div>
@@ -85,17 +78,7 @@ var UserProfile = React.createClass({
 var Hero = React.createClass({
   render: function() {
     return (
-      <div id="hero" className="Hero" style={{backgroundImage: 'url(https://images.alphacoders.com/633/633643.jpg)'}}>
-        <div className="content">
-          <img className="logo" src="http://www.returndates.com/backgrounds/narcos.logo.png" alt="narcos background" />
-          <h2>Season 2 now available</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque id quam sapiente unde voluptatum alias vero debitis, magnam quis quod.</p>
-          <div className="button-wrapper">
-            <HeroButton primary={true} text="Watch now" />
-            <HeroButton primary={false} text="+ My list" />
-          </div>
-        </div>
-        <div className="overlay"></div>
+      <div id="hero" className="Hero" style={{backgroundImage: 'url(/Users/anikemaryfisher/Downloads/ChatApp/React/landing/images/assests/IMG_7533.png'}}>
       </div>
     );
   }

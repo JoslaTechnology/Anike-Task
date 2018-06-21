@@ -10,15 +10,15 @@ import NoMatch from './pages/NoMatch';
 import registerServiceWorker from './registerServiceWorker';
 
 import './includes/bootstrap';
-import './styles/yarns.css';
+import './styles/yarn.css';
 
 ReactDOM.render((
 	<BrowserRouter>
 		<div>
 			<Switch>
 				<PrivateRoute exact path="/" component={App}/>
-				<Route exact path="/signup" component={SignUp}/>		
-				<Route exact path="/login" component={Login}/>	
+				<Route exact path="/signup" component={SignUp}/>
+				<Route exact path="/login" component={Login}/>
 				<Route component={NoMatch}/>
 			</Switch>
 		</div>
